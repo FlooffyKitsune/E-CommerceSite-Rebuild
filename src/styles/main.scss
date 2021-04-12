@@ -32,6 +32,22 @@ html {
 .btn:hover {
     background-color: #b26ba5;
 }
+footer {
+    width: 100%;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+    p {
+        text-align: center;
+    }
+}
+#home-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
 /*  Site Navigation  */
 .mobile-nav {
