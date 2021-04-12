@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/48ca721833.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <title>KittyTech | Payment</title>
+</head>
+<body>
+    <header class="site-header">
+        <a href="" class="site-header-logo">
+            <img src="./images/KittyTech.svg" alt="KittyTech" height="50">
+        </a>
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li class="nav-links"><a href="./index.html">Home</a></li>
+                <li class="nav-links"><a href="./products.html">Products</a></li>
+                <li class="nav-links"><a href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span>0</span></a>
+    </header>
+    <h1 class="hide_me">Payment</h1>
+    <div class="mobile-nav">
+        <nav>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./about.html">About Us</a>
+        </nav>
+    </div>
+    <div class="payment-content">
+        <h2>Checkout</h2>
+        <div class="payment-form">
+            <form action="/confirmation.html" method="get">
+                <fieldset>
+                    <legend>Payment Info</legend>
+
+                    <label for="cardname">Name on Card</label>
+                    <input type="text" name="cardname" id="cardname">
+
+                    <label for="cardnumber">Card Number</label>
+                    <input type="text" name="cardnumber" id="cardnumber">
+
+                    <label for="expdate">Expiration Date</label>
+                    <input type="text" name="expdate" id="expdate">
+
+                    <label for="cardcode">CVV / CVC</label>
+                    <input type="text" name="cardcode" id="cardcode">
+
+                </fieldset>   
+                <button type="submit" class="btn">Confirm Order</button>
+            </form>
+        </div>
+        <div class="progress-container">
+            <ul class="progressbar">
+                <li class="active">Cart</li>
+                <li class="active">Shipping Info</li>
+                <li class="active">Payment</li>
+                <li>Complete</li>
+        </ul>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>
